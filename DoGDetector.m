@@ -24,7 +24,7 @@ for j = 1:size(curve, 2)
     %as, a sequence: 1 2 3 4 5 6 7 8 9, the extened sequence: 4 3 2 1 2 3 4 5 6 7 8 9 8 7 6
     L=length(x);
     if L>W
-        % Calculate curvature
+    
         if curve_mode(j,:) == 'loop'
             x1=[x(L-W+1:L);x;x(1:W)];
             y1=[y(L-W+1:L);y;y(1:W)];
